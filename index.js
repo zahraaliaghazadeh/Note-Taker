@@ -66,13 +66,14 @@ app.post("/api/notes", function (req, res) {
             return res.status(400);
         }
         const pastnote = JSON.parse(data)
-
         if(pastnote.length === 0){
             newnote.id =1;
         }else{
             const lastnote = pastnote[pastnote.length-1]
-            newnote.id = pastnote.id +1
+            newnote.id = lastnote.id +1
         }
+        // console.log(newnote);
+
         pastnote.push(newnote);
 
         fs.writeFile("./db/db.json",JSON.stringify(pastnote),function(error,data){
@@ -91,36 +92,36 @@ app.post("/api/notes", function (req, res) {
 
 
 
-// // ----delete-----
-// app.delete("/api/notes/:id", function(req, res) {
-//     const deleteID = parseInt(req.params.id)
-//     // const id = req.params.id;
-//     fs.readFile("./db/db.json", "utf8", function (error, data) {
-//         if (error) {
-//             return response.status(400);
-//         }
-//         const pastnote = JSON.parse(data)
+// ----delete-----
+app.delete("/api/notes/:id", function(req, res) {
+    const deleteID = parseInt(req.params.id)
+    // const id = req.params.id;
+    fs.readFile("./db/db.json", "utf8", function (error, data) {
+        if (error) {
+            return response.status(400);
+        }
+        const pastnote = JSON.parse(data)
 
-//         for(let i = 0; i < pastnote.length; i++) {
-//             if(pastnote[i].id === id) {
-//                 pastnote.splice(i,1); 
-//             }
-//         }
+        for(let i = 0; i < pastnote.length; i++) {
+            if(pastnote[i].id === deleteID) {
+                pastnote.splice(i,1); 
+            }
+        }
 
-//         // pastnote.forEach((note, index) => {
-//         //     if (note.id === deleteID){
-//         //         pastnote.splice(index,1)
-//         //     }
-//         // });
-//         fs.writeFile("./db/db.json", JSON.stringify(pastnote), function(error, data) {
-//             if (error) {
-//                 return response.status(400);
-//             }
-//             // response.status(200);
-//             res.json(req.params.id); 
-//         })
-//     })
-// });
+        // pastnote.forEach((note, index) => {
+        //     if (note.id === deleteID){
+        //         pastnote.splice(index,1)
+        //     }
+        // });
+        fs.writeFile("./db/db.json", JSON.stringify(pastnote), function(error, data) {
+            if (error) {
+                return response.status(400);
+            }
+            // response.status(200);
+            res.json(req.params.id); 
+        })
+    })
+});
 
 
 
