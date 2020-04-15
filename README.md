@@ -22,13 +22,13 @@ This project includes html files,test files and javascript files for backend cod
 * Tech 1 - initial html files and starter codes provided from [TriologyEd](https://www.trilogyed.com/)
 * Tech 2 - for some styling used [bootstrap](https://getbootstrap.com/)
 * Tech 3 - for icons used [font awesome](https://fontawesome.com/)
-* Tech 1 - express npm package [express](https://www.npmjs.com/package/express)
-* Tech 2 - path npm package [path](https://nodejs.org/docs/latest/api/path.html)
+* Tech 4 - express npm package [express](https://www.npmjs.com/package/express)
+* Tech 5 - path npm package [path](https://nodejs.org/docs/latest/api/path.html)
 
 ## Setup
 In order to run this application you will need node installed which can be downloaded from [Download Node](https://nodejs.org/en/download/) You will need Visual Code as well [Visual Code](https://code.visualstudio.com/)
 
-After installations, Once you download the files, You can open the terminal and type the command ``` npm install ``` This will install the dependencies required (jest and inquirer npm packages) to run this application. After the install is finished if you run the command ``` node index.js``` and answer the prompt questions you will have an html file generated.
+After installations, Once you download the files, You can open the terminal and type the command ``` npm install ``` This will install the dependencies required such as express to run this application. After the install is finished if you run the command ``` node index.js``` in terminal, it will connect you to the server. Then once you type the ```http://localhost:3000/``` in the browser you can start the appliaction.
 
 
 
@@ -40,6 +40,8 @@ After installations, Once you download the files, You can open the terminal and 
 To-do list:
 * This application is not currently deleting notes with the delete button. 
 * This application is not currently updating notes with the update button.
+* fix the file structure.
+* fix the heroku deploying bug.
 * Improvement to be done : This application can be improved on how it is using the CRUD (creat, read, update and delete).
 
 
