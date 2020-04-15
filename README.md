@@ -1,5 +1,5 @@
 # [Note-Taker](https://notetakingappyalda.herokuapp.com/)
-> This application will let the user save their notes.
+> This application will let the user save Notes and it also gives the ability to delete notes.
 
 ## Table of contents
 * [General info](#general-info)
@@ -41,7 +41,6 @@ In order to use this application you can use this [link](https://notetakingappya
 
 To-do list:
 
-* This application is not currently updating notes with the update button.
 * Improvement to be done : This application can be improved on how it is using the CRUD (creat, read, update and delete).
 
 
