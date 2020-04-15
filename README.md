@@ -1,4 +1,4 @@
-# Note-Taker
+# [Note-Taker](https://notetakingappyalda.herokuapp.com/)
 > This application will let the user save their notes.
 
 ## Table of contents
@@ -6,6 +6,7 @@
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Usage](#usage)
 * [Features](#features)
 * [Status](#status)
 * [Inspiration](#inspiration)
@@ -30,7 +31,8 @@ In order to run this application you will need node installed which can be downl
 
 After installations, Once you download the files, You can open the terminal and type the command ``` npm install ``` This will install the dependencies required such as express to run this application. After the install is finished if you run the command ``` node index.js``` in terminal, it will connect you to the server. Then once you type the ```http://localhost:3000/``` in the browser you can start the appliaction.
 
-
+## Usage
+In order to use this application you can use this [link](https://notetakingappyalda.herokuapp.com/) , You would add a title and a note. Then you click the save buton and it will save your notes. You can then use the trash button to delete a note.
 
 ## Features
 * Feature 1: The user can save notes using this app.
@@ -38,10 +40,8 @@ After installations, Once you download the files, You can open the terminal and 
 
 
 To-do list:
-* This application is not currently deleting notes with the delete button. 
+
 * This application is not currently updating notes with the update button.
-* fix the file structure.
-* fix the heroku deploying bug.
 * Improvement to be done : This application can be improved on how it is using the CRUD (creat, read, update and delete).
 
 
