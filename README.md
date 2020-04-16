@@ -17,7 +17,8 @@ This project includes html files,test files and javascript files for backend cod
 
 
 ## Screenshots
-![gif](images/gif1.gif)
+
+![gif](images/gif2.gif)
 
 ## Technologies
 * Tech 1 - initial html files and starter codes provided from [TriologyEd](https://www.trilogyed.com/)
@@ -35,7 +36,7 @@ After installations, Once you download the files, You can open the terminal and 
 In order to use this application you can use this [link](https://notetakingappyalda.herokuapp.com/) , You would add a title and a note. Then you click the save buton and it will save your notes. You can then use the trash button to delete a note.
 
 ## Features
-* Feature 1: The user can save notes using this app.
+* Feature 1: The user can save or delete notes using this app.
 * Feature 2: This project is using express npm package.
 
 
